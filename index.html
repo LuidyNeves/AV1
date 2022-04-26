@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Avaliação Busca de Filmes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <main>
+        <div class="poster" id="banner">
+            <div class="imdbrating" id="banner">
+                <span class="icon"><i class="fa-solid fa-star"></i></span>
+                <span class="score" id="nota">3.3</span>
+            </div>
+        </div>
+
+        <div class="info">
+
+            <!-- Aqui é adicionado a barra de pesquisas -->
+            <input id="busca" type="text" placeholder="Digite o nome do filme">
+
+            <!-- Butão que realiza a pesquisa chamando a função "Buscar Filme" -->
+            <button id="button" type="Pesquisar" value="PESQUISAR" onclick="buscarFilme()" ondblclick="carregando()">Pesquisar</button>
+
+            <p id="descricao"> </p>
+            <!-- Aqui é adicionado a descrição do filme caso a respota for == False-->
+            <h1 class="title" id="titulo">WHITHOUT REMORSE</h1>
+            <p><span class="text-blue" id="ano">2021</span><span class="filmeType" id="tipo">Action, Thriller, War</span> <span class="text-blue" id="duracao">129 min</span></p>
+            <p id="sinopse">An elite Navy SEAL, goes on a path to avenge his wife's murder only to find himself inside of a larger conspiracy.</p>
+            <p id="escritor">
+                <strong>Escrito por:</strong>Taylor Sheridan, Will Staples, Tom Clancy
+            </p>
+            <p id="diretor">
+                <strong>Dirigido por:</strong> Luidy Neves
+            </p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

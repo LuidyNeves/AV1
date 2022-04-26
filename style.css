@@ -1,0 +1,133 @@
+/* importando a fonte Roboto do google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap');
+
+/* resetando os espaços de margin e padding, além de mudar o tamanho dos elementos para border-box */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* para que os elementos possam ter o tamanho exato do seu conteúdo */
+}
+
+
+/* Conteudo central do site */
+
+main {
+    width: 100%;
+    height: 100vh;
+    /* Altura com toda a área visivel*/
+    display: flex;
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+}
+
+.poster {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-image: url(./img/filme.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.imdbrating {
+    position: absolute;
+    /* para que o elemento fique fixo */
+    width: 315.47px;
+    height: 70.49px;
+    left: -90px;
+    bottom: 0;
+    padding-left: 90px;
+    /* padding define uma a distância entre o conteúdo de um elemento e suas bordas */
+    padding-top: 10px;
+    background: #217C8F;
+    transform: rotate(47.42deg);
+    /* rotação do elemento */
+}
+
+.imdbrating .icon {
+    font-size: 40px;
+    color: #F6C516;
+}
+
+.imdbrating .score {
+    color: #fff;
+    font-size: 32px;
+    z-index: 101;
+}
+
+.info {
+    width: 50%;
+    background: #390F0F;
+    box-shadow: inset 0px 0px 120px #090808;
+    color: #CAB9B9;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info h1 {
+    font-size: 54px;
+    color: #D6D6D6;
+}
+
+.info p {
+    margin: 15px 0;
+}
+
+.info .text-blue {
+    color: #217C8F;
+    font-weight: 900;
+}
+
+.info .filmeType {
+    margin: 0 20px;
+}
+
+input {
+    margin-bottom: 10px;
+    position: absolute;
+    /* elemento ficará em uma posição fixa em relação à página. */
+    width: 377px;
+    height: 47px;
+    left: 778px;
+    top: 48px;
+    background: #390F0F;
+    border: 6px solid #217C8F;
+    box-sizing: border-box;
+    /* para que o input não seja redimensionado */
+    border-radius: 10px;
+    color: #CAB9B9;
+}
+
+button {
+    position: absolute;
+    /* elemento ficará em uma posição fixa em relação à página. */
+    width: 142px;
+    height: 47px;
+    left: 1176px;
+    top: 48px;
+    background: #217C8F;
+    border-radius: 10px;
+    color: #CAB9B9;
+}
+
+button:hover {
+    /* ao passar o mouse sobre o botao, ele irá aumentar */
+    transform: scale(1.1);
+    background: aqua;
+    color: white;
+    transition: all 1.5s;
+}
+
+input:hover {
+    /* ao passar o mouse sobre o input, ele irá aumentar */
+    transform: scale(1.1);
+    color: white;
+    transition: all 1.5s;
+}
